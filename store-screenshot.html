@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>لقطة المتجر</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1280px; height: 800px; overflow: hidden; background: #ece7df; font-family: "Segoe UI", Tahoma, sans-serif; }
+    .window { display: flex; width: 1280px; height: 800px; }
+    .page { flex: 1; background: #fff; padding: 36px 48px; color: #1c1917; }
+    .page h1 { margin: 0 0 8px; text-align: center; font-size: 28px; }
+    .meta { margin: 0; text-align: center; color: #57534e; font-size: 14px; }
+    .rule { height: 3px; background: #7f1d1d; border: 0; margin: 18px 0 22px; }
+    .subject { margin: 18px 0 0; color: #7c2d12; font-size: 15px; font-weight: 700; }
+    .article { margin: 2px 0 8px; color: #7f1d1d; font-size: 20px; font-weight: 700; }
+    .body { margin: 0 0 8px; font-size: 18px; line-height: 1.7; }
+    .panel { width: 360px; background: #f3eee6; border-left: 1px solid #e6dccb; padding: 18px 16px; }
+    .head { display: flex; gap: 12px; align-items: center; }
+    .mark { width: 40px; height: 40px; border-radius: 12px; background: #7f1d1d; color: #fffaf5; display: grid; place-items: center; font-family: "Traditional Arabic", Tahoma, serif; font-size: 26px; }
+    .head strong { display: block; font-size: 16px; }
+    .head em { display: block; color: #57534e; font-style: normal; font-size: 12px; }
+    .card, .choice { background: #fffdf8; border: 1px solid #e6dccb; border-radius: 14px; }
+    .card { margin-top: 14px; padding: 12px 14px; }
+    .card h2 { margin: 0; font-size: 18px; }
+    .card p { margin: 6px 0 0; color: #57534e; }
+    .choice { display: flex; gap: 10px; margin-top: 8px; padding: 10px 12px; }
+    .choice.on { border-color: #7f1d1d; background: #fdf6f4; }
+    .choice strong, .choice small { display: block; }
+    .choice small { color: #57534e; font-size: 12px; }
+    button { width: 100%; margin-top: 14px; border: 0; border-radius: 12px; padding: 12px; background: #7f1d1d; color: #fffaf5; font: inherit; font-weight: 700; }
+    .status { color: #166534; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <main class="page">
+      <h1>القانون المدني</h1>
+      <p class="meta">نص المواد كما هو معروض في قرارك</p>
+      <hr class="rule">
+      <p class="subject">التسمية وبدء العمل</p>
+      <p class="article">المادة (1)</p>
+      <p class="body">يسمى هذا القانون (القانون المدني لسنة 1976) ويعمل به من تاريخ 1977/1/1.</p>
+      <p class="subject">السريان</p>
+      <p class="article">المادة (2)</p>
+      <p class="body">1. تسري نصوص هذا القانون على المسائل التي تتناولها هذه النصوص بألفاظها ومعانيها.</p>
+      <p class="body">2. فإذا لم تجد المحكمة نصاً في هذا القانون حكمت بأحكام الفقه الإسلامي.</p>
+    </main>
+    <aside class="panel">
+      <div class="head">
+        <span class="mark">و</span>
+        <span>
+          <strong>تصدير التشريع</strong>
+          <em>من قرارك إلى ملف وورد</em>
+        </span>
+      </div>
+      <section class="card">
+        <h2>القانون المدني</h2>
+        <p>ظاهر الآن مادة واحدة. «القانون كاملاً» يجلب كل المواد.</p>
+      </section>
+      <label class="choice on">
+        <input type="radio" checked>
+        <span>
+          <strong>القانون كاملاً</strong>
+          <small>كل المواد في ملف واحد، حتى لو كانت الصفحة تعرض مادة واحدة.</small>
+        </span>
+      </label>
+      <label class="choice">
+        <input type="radio">
+        <span>
+          <strong>النص الظاهر فقط</strong>
+          <small>المادة أو المواد المعروضة في الصفحة الحالية.</small>
+        </span>
+      </label>
+      <button type="button">تنزيل ملف وورد</button>
+      <p class="status">جاهز للتصدير.</p>
+    </aside>
+  </div>
+</body>
+</html>

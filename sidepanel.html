@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <title>تصدير التشريع</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <main>
+    <header>
+      <span class="mark" aria-hidden="true">و</span>
+      <span>
+        <strong>تصدير التشريع</strong>
+        <em>من قرارك إلى ملف وورد</em>
+      </span>
+    </header>
+
+    <section class="card" aria-live="polite">
+      <h1 id="law-title">جارٍ قراءة الصفحة…</h1>
+      <p id="summary">يتم التعرف على التشريع المفتوح.</p>
+    </section>
+
+    <fieldset>
+      <legend>ماذا يُصدَّر</legend>
+      <label class="choice">
+        <input type="radio" name="mode" value="full" checked>
+        <span>
+          <strong>القانون كاملاً</strong>
+          <small>كل المواد في ملف واحد، حتى لو كانت الصفحة تعرض مادة واحدة.</small>
+        </span>
+      </label>
+      <label class="choice">
+        <input type="radio" name="mode" value="current">
+        <span>
+          <strong>النص الظاهر فقط</strong>
+          <small>المادة أو المواد المعروضة في الصفحة الحالية.</small>
+        </span>
+      </label>
+    </fieldset>
+
+    <button id="export" type="button" disabled>تنزيل ملف وورد</button>
+    <p id="status" role="status" data-kind="info">بانتظار صفحة تشريع.</p>
+  </main>
+  <script src="lib/docx.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
